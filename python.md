@@ -9,13 +9,6 @@ It is used for:
 * mathematics,
 * system scripting.
 
-What can Python do?
---
-* Python can be used on a server to create web applications.
-* Python can be used alongside software to create workflows.
-* Python can connect to database systems. It can also read and modify files.
-* Python can be used to handle big data and perform complex mathematics.
-
 Why Python?
 --
 * Works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
@@ -26,51 +19,26 @@ The most recent major version of Python:
 --
 * Python 3
 
-Python Versions:
+--------------------------------------------------------
+Syntax: print("Hello World!")
 --
-* Python 1.0V introduced in Jan 1994
-* Python 2.0V introduced in October 2000
-* Python 3.0V introduced in December 2008
+--------------------------------------------------------
+Comments:
+--
+* Single comment: # This is how a single comment is written.
+* Multi line comment:
+"""
+This is 
+how a multiline 
+comment is written
+"""
 
-Python Syntax:
---
-Example:
---
-* print("Hello, World!")
-
+--------------------------------------------------------
 IDENTIFIERS:
 --
 * A Name in Python Program is called Identifier.
 * It can be Class Name OR Function Name OR Module Name OR Variable Name.
 * a = 10
-
-Rules to define Identifiers in Python:
---
-* The only allowed characters in Python are:
-  * alphabet symbols(either lower case or upper case)
-  * digits(0 to 9)
-  * underscore symbol(_)
-
-* Identifier should not starts with digit:
-  * total123 √
- 
-* Identifiers are case sensitive. Of course Python language is case sensitive language:
-  * total=10
-  * TOTAL=999
-  * print(total) #10
-  * print(TOTAL) #999
-
-Identifier:
---
-1) Alphabet Symbols (Either Upper case OR Lower case)
-2) If Identifier is start with Underscore (_) then it indicates it is private.
-3) Identifier should not start with Digits.
-4) Identifiers are case sensitive.
-5) We cannot use reserved words as identifiers
- Eg: def = 10 
-6) There is no length limit for Python identifiers. But not recommended to use too 
-lengthy identifiers.
-7) Dollor ($) Symbol is not allowed in Python.
 
 Note:
 --
@@ -80,7 +48,156 @@ identifier.
 3) If the identifier starts and ends with two underscore symbols then the identifier is 
 language defined special name, which is also known as magic methods.
 4) Eg: __add__
+--------------------------------------------------------
+Variables: Containers to store data.
+--
+* x = 5 # x is of type int
+* y = "John" # y is now of type str
 
+Variable Names: A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+--
+* A variable name must start with a letter or the underscore character
+* A variable name cannot start with a number
+* A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+* Variable names are case-sensitive (age, Age and AGE are three different variables)
+* A variable name cannot be any of the Python keywords.
+
+Multi Words Variable Names: You can use any of below casing methods to describe multi line variable names.
+--
+
+* Camel Case: Each word, except the first, starts with a capital letter. EX: myVariableName = "John"
+* Pascal Case: Each word starts with a capital letter. EX: MyVariableName = "John"
+* Snake Case: Each word is separated by an underscore character. EX: my_variable_name = "John"
+
+Assign Multiple Values:
+--
+* Many Values to Multiple Variables. EX: x, y, z = "Orange", "Banana", "Cherry"
+Note: Make sure the number of variables matches the number of values, or else you will get an error.
+--
+
+* One Value to Multiple Variables. EX: x = y = z = "Orange"
+* Unpack a Collection: If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
+
+Example: Unpack a list:
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+Global Variables: Variables that are created outside of a function (as in all of the examples in the previous pages) are known as global variables.
+--
+* Example: 
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+* Create a variable inside a function, with the same name as the global variable:
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+--------------------------------------------------------
+The global Keyword: Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+--
+* If you use the global keyword, the variable belongs to the global scope:
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+NOTE: You have global variables specified and want to over ride those variable values, then use "global" key word inside function.
+--
+* EX:
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+--------------------------------------------------------
+Casting: To convert one data type to another data type.
+--
+* x = str(3)    # x will be '3'
+* y = int(3)    # y will be 3
+* z = float(3)  # z will be 3.0
+--------------------------------------------------------
+Type function: To get the data type of variable.
+--
+y = "John"
+print(type(y)) 
+--------------------------------------------------------
+Single or Double Quotes: You can choose any.
+--
+x = "John"
+# is the same as
+x = 'John'
+--------------------------------------------------------
+Data Types:
+--
+
+* Text Type:		str
+* Numeric Types:	int, float, complex
+* Sequence Types:	list, tuple, range
+* Mapping Type:		dict
+* Set Types:		set, frozenset
+* Boolean Type:		bool
+* Binary Types:		bytes, bytearray, memoryview
+* None Type:		NoneType
+
+
+Example	 					Data Type
+x = "Hello World"				str	
+x = 20						int	
+x = 20.5					float	
+x = 1j						complex	
+x = ["apple", "banana", "cherry"]		list	
+x = ("apple", "banana", "cherry")		tuple	
+x = range(6)					range	
+x = {"name" : "John", "age" : 36}		dict	
+x = {"apple", "banana", "cherry"}		set	
+x = frozenset({"apple", "banana", "cherry"})	frozenset	
+x = True					bool	
+x = b"Hello"					bytes	
+x = bytearray(5)				bytearray	
+x = memoryview(bytes(5))			memoryview	
+x = None					NoneType
+
+Setting the Specific Data Type: If you want to specify the data type, you can use the following constructor functions:
+--
+Example						Data Type
+x = str("Hello World")				str	
+x = int(20)					int	
+x = float(20.5)					float	
+x = complex(1j)					complex	
+x = list(("apple", "banana", "cherry"))		list	
+x = tuple(("apple", "banana", "cherry"))	tuple	
+x = range(6)					range	
+x = dict(name="John", age=36)			dict	
+x = set(("apple", "banana", "cherry"))		set	
+x = frozenset(("apple", "banana", "cherry"))	frozenset	
+x = bool(5)					bool	
+x = bytes(5)					bytes	
+x = bytearray(5)				bytearray	
+x = memoryview(bytes(5))			memoryview
+--------------------------------------------------------
 RESERVED WORDS:
 --
 * In Python some words are reserved to represent some meaning or functionality. Such types of words are called reserved words.
@@ -91,47 +208,16 @@ RESERVED WORDS:
   * while, for, break, continue, return, in, yield
   * try, except, finally, raise, assert
   * import, from, as, class, def, pass, global, nonlocal, lambda, del, with
-
-To get the list of key words:
---
-* import keyword
-* keyword.kwlist
-['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 
-'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 
-'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
-
+  
 Note:
 --
 * Only True, False, None start with capital letter.
 
-DATA TYPES:
---
-* Data Type represents the type of data present inside a variable.
-* In Python we are not required to specify the type explicitly. Based on value provided, the type will be assigned automatically.Hence Python is dynamically Typed Language.
-
-Python contains the following inbuilt data types:
---
-1) Int
-2) Float
-3) Complex
-4) Bool
-5) Str
-6) Bytes
-7) Bytearray
-8) Range
-9) List
-10) Tuple
-11) Set
-12) Frozenset
-13) Dict
-14) None
-
-Note: Python contains several inbuilt functions.
+--------------------------------------------------------
+Inbuilt functions.
 --
 * type(): to check the type of variable
 * id(): to get address of object
 * print(): to print the value
 * In Python everything is an Object.
-
-
-
+--------------------------------------------------------
