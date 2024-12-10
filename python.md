@@ -18,7 +18,21 @@ Why Python?
 The most recent major version of Python:
 --
 * Python 3
-
+--------------------------------------------------------
+RESERVED WORDS:
+--
+* In Python some words are reserved to represent some meaning or functionality. Such types of words are called reserved words.
+* There are 33 reserved words available in Python.
+  * True, False, None
+  * and, or ,not,is
+  * if, elif, else
+  * while, for, break, continue, return, in, yield
+  * try, except, finally, raise, assert
+  * import, from, as, class, def, pass, global, nonlocal, lambda, del, with
+  
+Note:
+--
+* Only True, False, None start with capital letter.
 --------------------------------------------------------
 Syntax: print("Hello World!")
 --
@@ -134,6 +148,7 @@ def myfunc():
 myfunc()
 
 print("Python is " + x)
+
 --------------------------------------------------------
 Casting: To convert one data type to another data type.
 --
@@ -143,14 +158,16 @@ Casting: To convert one data type to another data type.
 --------------------------------------------------------
 Type function: To get the data type of variable.
 --
-y = "John"
-print(type(y)) 
+* y = "John"
+* print(type(y)) 
+
 --------------------------------------------------------
 Single or Double Quotes: You can choose any.
 --
 x = "John"
 # is the same as
 x = 'John'
+
 --------------------------------------------------------
 Data Types:
 --
@@ -165,59 +182,43 @@ Data Types:
 * None Type:		NoneType
 
 
-Example	 	                                  				Data Type
+Example---Data Type
 --
-* x = "Hello World"				                          str	
-* x = 20					                                  int	
-* x = 20.5				                                 	float	
-* x = 1j				                                  	complex	
-* x = ["apple", "banana", "cherry"]	               	list	
-* x = ("apple", "banana", "cherry")	               	tuple	
-* x = range(6)				                             	range	
-* x = {"name" : "John", "age" : 36}		              dict	
-* x = {"apple", "banana", "cherry"}	               	set	
-* x = frozenset({"apple", "banana", "cherry"})	    frozenset	
-* x = True				                                 	bool	
-* x = b"Hello"					                            bytes	
-* x = bytearray(5)				                          bytearray	
-* x = memoryview(bytes(5))		                     	memoryview	
-* x = None				                                 	NoneType
+* x = "Hello World"---str	
+* x = 20---int	
+* x = 20.5---float	
+* x = 1j---complex	
+* x = ["apple", "banana", "cherry"]---list	
+* x = ("apple", "banana", "cherry")---tuple	
+* x = range(6)---range	
+* x = {"name" : "John", "age" : 36}---dict	
+* x = {"apple", "banana", "cherry"}---set	
+* x = frozenset({"apple", "banana", "cherry"})---frozenset	
+* x = True---bool	
+* x = b"Hello"---bytes	
+* x = bytearray(5)---bytearray	
+* x = memoryview(bytes(5))---memoryview	
+* x = None---NoneType
 
 Setting the Specific Data Type: If you want to specify the data type, you can use the following constructor functions:
 --
 
-Example					                                  	Data Type
+Example---Data Type
 --
-* x = str("Hello World")			                    	str	
-* x = int(20)					                              int	
-* x = float(20.5)		                          			float	
-* x = complex(1j)			                          		complex	
-* x = list(("apple", "banana", "cherry"))	         	list	
-* x = tuple(("apple", "banana", "cherry"))         	tuple	
-* x = range(6)				                            	range	
-* x = dict(name="John", age=36)			                dict	
-* x = set(("apple", "banana", "cherry"))	         	set	
-* x = frozenset(("apple", "banana", "cherry"))	    frozenset	
-* x = bool(5)				                              	bool	
-* x = bytes(5)					                            bytes	
-* x = bytearray(5)				                          bytearray	
-* x = memoryview(bytes(5))		                     	memoryview
-
---------------------------------------------------------
-RESERVED WORDS:
---
-* In Python some words are reserved to represent some meaning or functionality. Such types of words are called reserved words.
-* There are 33 reserved words available in Python.
-  * True, False, None
-  * and, or ,not,is
-  * if, elif, else
-  * while, for, break, continue, return, in, yield
-  * try, except, finally, raise, assert
-  * import, from, as, class, def, pass, global, nonlocal, lambda, del, with
-  
-Note:
---
-* Only True, False, None start with capital letter.
+* x = str("Hello World")---str	
+* x = int(20)---int	
+* x = float(20.5)---float	
+* x = complex(1j)---complex	
+* x = list(("apple", "banana", "cherry"))---list	
+* x = tuple(("apple", "banana", "cherry"))---tuple	
+* x = range(6)---range	
+* x = dict(name="John", age=36)---dict	
+* x = set(("apple", "banana", "cherry"))---set	
+* x = frozenset(("apple", "banana", "cherry"))---frozenset	
+* x = bool(5)---bool	
+* x = bytes(5)---bytes	
+* x = bytearray(5)---bytearray	
+* x = memoryview(bytes(5)))---memoryview
 
 --------------------------------------------------------
 Inbuilt functions.
