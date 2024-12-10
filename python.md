@@ -72,6 +72,7 @@ Multi Words Variable Names: You can use any of below casing methods to describe 
 Assign Multiple Values:
 --
 * Many Values to Multiple Variables. EX: x, y, z = "Orange", "Banana", "Cherry"
+  
 Note: Make sure the number of variables matches the number of values, or else you will get an error.
 --
 
