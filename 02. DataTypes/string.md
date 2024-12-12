@@ -92,7 +92,7 @@ ESCAPE CHARACTERS: escape characters are used to insert characters that are ille
 * \b	Backspace. moves back by one space between characters.
 
 --------------------------------------------------------------------
-String Methods: This will help modify string values. Convert to uper case, lower case, strip, split etc.....
+String Methods: Operations done on strings. This will help modify string values. Convert to uper case, lower case, strip, split etc.....
 --
 
 
