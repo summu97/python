@@ -79,7 +79,7 @@ ESCAPE CHARACTERS: escape characters are used to insert characters that are ille
   * EX: txt = "We are the so-called \'Vikings\' from the north."
         print(txt)
   * Output: We are the so-called 'Vikings' from the north.
-* \\	Backslash
+* "\\"	Backslash
   * path = "C:\\Users\\Name\\Documents"
   * print(path)
   * Output: C:\Users\Name\Documents
