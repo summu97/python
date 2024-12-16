@@ -9,6 +9,10 @@ Conditions: These conditions can be used in several ways, most commonly in "if s
 
 If ... Else: An "if statement" is written by using the if keyword.
 --
+* if Syntax:
+if <condition>:
+  print("...msg...")
+  --
 * EX:
   * a = 33
   * b = 200
@@ -18,6 +22,8 @@ If ... Else: An "if statement" is written by using the if keyword.
 * NOTE: Make sure you put ":" at last of if - block and also two white spaces before print statement.
 
 Elif:
+--
+elif Syntax: Same as "if" statement
 --
 * EX:
   * a = 33
@@ -29,6 +35,10 @@ Elif:
 
 Else:
 --
+* else Syntax:
+else:
+  print("...msg...")
+  --
 * EX:
   * a = 200
   * b = 33
