@@ -9,10 +9,10 @@ Conditions: These conditions can be used in several ways, most commonly in "if s
 
 If ... Else: An "if statement" is written by using the if keyword.
 --
-* if Syntax:
-if <condition>:
-  print("...msg...")
-  --
+* if Syntax: 
+* if <condition>:
+*   print("...msg...")
+
 * EX:
   * a = 33
   * b = 200
@@ -36,9 +36,9 @@ elif Syntax: Same as "if" statement
 Else:
 --
 * else Syntax:
-else:
-  print("...msg...")
-  --
+* else:
+*   print("...msg...")
+
 * EX:
   * a = 200
   * b = 33
