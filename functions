@@ -1,5 +1,5 @@
-Functions: Block of statements that perform a particular task.
-redundant = repeating again and again.
+* Functions: Block of statements that perform a particular task.
+* redundant = repeating again and again.
 
 Syntax:
 ---
@@ -9,7 +9,7 @@ def func_name(param1, param2..) # Function defining
 
 func_name(arg1, arg2..) # Calling function
 ---
-Ex: 
+* Ex: 
 def sum(a, b):
     add = a + b
     print(int(add))
@@ -26,11 +26,11 @@ sum = prin()
 print(sum)
 ---
 
-Two types of functions available in python:
-Built-in functions: That already defined. Ex: print(), len(), range(), type()...
-User defined functions: That we define.
+* Two types of functions available in python:
+- Built-in functions: That already defined. Ex: print(), len(), range(), type()...
+- User defined functions: That we define.
 
-Function types:
+* Function types:
 #with arguments without return type
 def add(a,b):
     print(a+b)
@@ -62,7 +62,7 @@ def add():
     print(a+b)
 add()
 
-Default parameters: Assigning a default value to parameter, which is used when no parameter is passed when calling the function.
+* Default parameters: Assigning a default value to parameter, which is used when no parameter is passed when calling the function.
 Ex:
 def sum(a = 1, b = 2):
     print(a + b)
@@ -70,7 +70,7 @@ def sum(a = 1, b = 2):
 
 sum()
 
-Examples:
+* Examples:
 1. To print length of list.
 
 fruits = ["apple", "banana", "cranberry"]
@@ -108,7 +108,7 @@ def usd_inr():
     
 usd_inr()
 
-Recursion: When a function calls itself repeatedly.
+* Recursion: When a function calls itself repeatedly.
 
 def re(n):
     if n == 0:
