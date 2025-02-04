@@ -1,0 +1,125 @@
+Functions: Block of statements that perform a particular task.
+redundant = repeating again and again.
+
+Syntax:
+---
+def func_name(param1, param2..) # Function defining
+  #---------Code-------
+  return val
+
+func_name(arg1, arg2..) # Calling function
+---
+Ex: 
+def sum(a, b):
+    add = a + b
+    print(int(add))
+    return add
+
+sumo = sum(1, 2)
+print("The value stored in sumo is: ", sumo)
+---
+def prin():
+    arg = "Hello"
+    return arg
+    
+sum = prin()
+print(sum)
+---
+
+Two types of functions available in python:
+Built-in functions: That already defined. Ex: print(), len(), range(), type()...
+User defined functions: That we define.
+
+Function types:
+#with arguments without return type
+def add(a,b):
+    print(a+b)
+a=int(input())
+b=int(input())
+add(a,b)
+ 
+#with arguments with return type
+def add(a,b):
+    sum=a+b
+    return sum
+a=int(input())
+b=int(input())
+print(add(a,b))
+#print(output)
+ 
+#without arguments with return type
+def add():
+    a=int(input())
+    b=int(input())
+    sum=a+b
+    return sum
+print(add())
+ 
+#without arguments without return type
+def add():
+    a=int(input())
+    b=int(input())
+    print(a+b)
+add()
+
+Default parameters: Assigning a default value to parameter, which is used when no parameter is passed when calling the function.
+Ex:
+def sum(a = 1, b = 2):
+    print(a + b)
+    return a + b
+
+sum()
+
+Examples:
+1. To print length of list.
+
+fruits = ["apple", "banana", "cranberry"]
+def list_fruits(list):
+    print(len(list))
+
+list_fruits(fruits)
+
+2. Print elements of list in single line.
+
+fruits = ["apple", "banana", "cranberry"]
+names = ["sumanth", "sumo", "chitti"]
+def list_print(list):
+    for i in list:
+        print(i, end = " ")
+    
+list_print(fruits)
+
+3. Find factorial of n.
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+    
+factorial(6)
+
+4. Function to convert USD to INR.
+
+def usd_inr():
+    n = int(input("Enter the dollar value: "))
+    inr = n*81
+    print(inr)
+    
+usd_inr()
+
+Recursion: When a function calls itself repeatedly.
+
+def re(n):
+    if n == 0:
+        return
+    print(n)
+    re(n-1)
+        
+re(2)
+
+
+
+NOTE:
+A function that does not have any return values will give "None", if try to store its value in a variable.
+In default parameters, non-default arguments are followed by default-arguments.
