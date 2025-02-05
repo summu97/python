@@ -224,7 +224,10 @@ The else Statement: With the else statement we can run a block of code once when
   -     print(x, y)
 
 
-
+NOTE:
+For "while" loop initially we need to declare the variable value that we are referencing for.
+For "for" loop to work it takes reference of a list, tuple, or a series on variables or objects.
+A loop comes into play only if the condition specified is true and when the condition fails the loop stops.
 
 
 
