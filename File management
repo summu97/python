@@ -1,0 +1,58 @@
+Types of files:
+- Text files: .txt, .docx, .log, etc..
+- Binary files: .mp4, .mov, .png, etc..
+
+Operations:
+- r = read
+- w = write(it deletes old content and add new(truncate))
+- x = creates a new file and open for writing
+- a = append(opens file for writing and add new data to end of the line)
+- b = binary mode
+- t = text mode
+- + = opens a disk file for updating(reading and writing)
+- r,t(default)
+
+Ex:
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+print(type(data))
+f.close
+
+Reading a file:
+- data = f.read()
+- data = f.readline()
+
+Ex:
+f = open("demo.txt", "a")
+f.write("\nNew content")
+f.close()
+
+Ex:
+f = open("demo.txt", "w")
+f.write("-----")
+f.close()
+
+
+"with" Syntax:
+Ex:
+with open("demo.txt", "a") as f:
+  data = f.read()
+  print(data)
+with open("demo.txt", "w") as f:
+  f.write("--------")
+
+Note: when you use with syntax it automatically closes the file.
+
+Deleting file: by default there is no function for deleting file. To do this job we use "os" module.
+import os
+os.remove("demo.txt")
+
+
+Ex:
+with open("demo.txt", "r") as f:
+  data = f.read()
+  new_data = data.replace("java", "python")
+  print(new_data)
+with open("demo.txt", "w") as f:
+  f.write(new_data)
