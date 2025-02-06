@@ -48,6 +48,12 @@ Deleting file: by default there is no function for deleting file. To do this job
 import os
 os.remove("demo.txt")
 
+Ex:
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
 
 Ex:
 with open("demo.txt", "r") as f:
@@ -56,3 +62,4 @@ with open("demo.txt", "r") as f:
   print(new_data)
 with open("demo.txt", "w") as f:
   f.write(new_data)
+
